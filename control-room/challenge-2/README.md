@@ -1,6 +1,6 @@
 # Control Room Challenge 2
 
-# Challenge 2b & 2c — XSS + MIME Upload Bypass → Reverse Shell
+# Challenge 2b — XSS + MIME Upload Bypass → Reverse Shell
 
 **Category:** Web / XSS / File Upload / RCE  
 **Prerequisite:** Admin session (complete Challenge 1 / brute-force first)
