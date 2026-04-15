@@ -93,7 +93,7 @@ To find the target IP from your Kali Linux:
 
 ```bash
 # Scan your subnet for the target
-nmap -sn 192.168.142.0/24
+nmap -sn <youriparea>/24
 ```
 
 ---
