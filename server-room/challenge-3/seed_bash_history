@@ -1,0 +1,26 @@
+ls
+cd /tmp
+ls -la
+exit
+ls
+ps aux
+top
+clear
+date
+whoami
+hostname
+df -h
+free -h
+ls /var
+ls /var/log
+sudo cat /var/log/warden_notes.log
+sudo mv /var/log/warden_notes.log /var/backups/.system_cache_8a4f
+ls /var/log
+clear
+history -c
+exit
+ls
+ls -la
+cd ~
+pwd
+exit

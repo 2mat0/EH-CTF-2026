@@ -1,0 +1,11 @@
+┌─────────────────────────────────────────────────────────┐
+│           THE SAFE BEHIND THE PAINTING                  │
+│                                                         │
+│   You found it. The warden's last secret.               │
+│                                                         │
+│   PrisonCTF{w4rd3n_l3ft_th3_k3ys_in_th3_l0ck}                │
+│                                                         │
+│   Written on the back of the frame:                     │
+│   "I should have hidden this somewhere harder."         │
+│                                                         │
+└─────────────────────────────────────────────────────────┘
