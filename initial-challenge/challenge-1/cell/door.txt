@@ -1,0 +1,9 @@
+
+The cell door is locked.
+
+There is a keypad with an encoded message. 
+Maybe there is something hidden that can help us solve this.
+
+Encoded message:
+L29wdC91bmxvY2s=
+
