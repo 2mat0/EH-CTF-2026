@@ -3,7 +3,7 @@
  * UNION-Based SQL Injection with Filter Bypass 
  * 
  * Server Room B
- * Theme: Prison escape — Irongate Penitentiary
+ * Theme: Prison escape — Fox River Penitentiary
  *
  * VULNERABILITY:
  *   The search form concatenates user input directly into a SQL query.
@@ -64,7 +64,7 @@ if ($firstRun) {
         hint TEXT NOT NULL
     )");
     $db->prepare("INSERT INTO esc4pe_pl4n (flag, hint) VALUES (?, ?)")->execute([
-        "flag{br0ke_0ut_of_c3ll_bl0ck_2}",
+        "PrisonCTF{br0ke_0ut_of_c3ll_bl0ck_2}",
         "The cell door swings open. You've escaped the prison."
     ]);
 }
@@ -77,6 +77,9 @@ function check_filter($input, $blocked) {
         if (strpos($input, $kw) !== false) {
             return $kw;
         }
+	if (strpos($input, strtolower($kw)) !== false) {
+	    return strtolower($kw);
+	}
     }
     return null;
 }
@@ -115,7 +118,7 @@ if ($query !== '') {
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Irongate Penitentiary — Inmate Registry</title>
+<title>Fox River Penitentiary — Inmate Registry</title>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -282,7 +285,7 @@ if ($query !== '') {
 <div class="container">
 
   <div class="header">
-    <h1><span>&#9638;</span> Irongate Penitentiary</h1>
+    <h1><span>&#9638;</span>Fox River Penitentiary</h1>
     <div class="subtitle">Inmate Registry System &mdash; RESTRICTED ACCESS &mdash; v3.1.0</div>
   </div>
 
@@ -334,7 +337,7 @@ if ($query !== '') {
   <?php endif; ?>
 
   <div class="footer">
-    &copy; 2024 Irongate Penitentiary &mdash; Department of Corrections &bull; Authorized personnel only
+    &copy; 2024 Fox River Penitentiary &mdash; Department of Corrections &bull; Authorized personnel only
   </div>
 
 </div>

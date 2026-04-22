@@ -1,0 +1,7 @@
+services:
+  inmate-registry-php:
+    build: .
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+    container_name: foxriver-inmate-registry-php
